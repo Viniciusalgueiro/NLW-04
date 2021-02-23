@@ -5,7 +5,7 @@ function App() {
     <div>
       <h1>Hello world </h1>
 
-      <Button />
+      <Button color="red"> </Button>
     </div>
   );
 }
