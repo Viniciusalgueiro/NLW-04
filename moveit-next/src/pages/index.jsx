@@ -7,6 +7,7 @@ import {ChallengeBox } from "../components/ChallangeBox";
 import Head from "next/head";
 
 import styles from "../styles/pages/Home.module.css";
+import { CountdownProvider } from '../contexts/CountdownContex';
 
 export default function App() {
   return (
@@ -16,6 +17,8 @@ export default function App() {
       </Head>
 
       <ExperienceBar />
+
+      <CountdownProvider>
 
       <section>
         <div>
@@ -27,6 +30,7 @@ export default function App() {
           <ChallengeBox />
         </div>
       </section>
+      </CountdownProvider>
     </div>
   );
 }
